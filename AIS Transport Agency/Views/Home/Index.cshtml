@@ -1,0 +1,26 @@
+﻿@model IEnumerable<AIS_Transport_Agency.Models.SlotBooking>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (User.IsInRole("User"))
+{
+    <h1>Apply for a Booking</h1>
+}
+else
+{
+    <h1>Our Products</h1>
+}
+
+<div class="d-flex flex-lg-wrap">
+@foreach (var item in Model)
+{
+    <div class="container mb-1" style="width: 33vw;">      
+        <div class="card ">
+            <div class="card-header"><h2>@item.LicenseType</h2></div>
+            <div class="card-body"><img src="@item.ImageURL" /></div>
+        </div>
+    </div>
+}
+</div>
