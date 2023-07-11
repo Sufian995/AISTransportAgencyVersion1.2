@@ -1,0 +1,19 @@
+﻿@model BookingUser
+@{
+    ViewData["Title"] = "PaymentOption";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-body">
+        <h4>Please select an option to proceed with your payment.</h4>
+        <hr />
+
+        @Html.ActionLink("Pay at Location", "PayOnSite", "BookingCart", new { userId = Model.UserId, bookingId = Model.BookingId})
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <a href="#" onclick="alert('This Option is not available at the moment. please proceed with other option')">Pay Online</a>
+    </div>
+</div>
+

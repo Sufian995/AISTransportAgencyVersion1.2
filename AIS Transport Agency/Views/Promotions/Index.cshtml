@@ -1,0 +1,54 @@
+﻿@model IEnumerable<SlotBooking>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form method="post">
+
+    <div class="container">
+        @if (Model.Count() > 0)
+        {
+            <h1 class="text-center mt-5 mb-5">Our Top Promoting Products</h1>
+
+            <div class="row">
+                @foreach (var i in Model)
+                {
+                    <div class="col-lg-4 mt-5">
+                        @if (i.ImageURL != null)
+                        {
+
+                            <img src="@i.ImageURL" height="200px" width="150px" class="thumbnail" />
+                        }
+                        else
+                        {
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg?20200913095930" height="200px" width="200px" class="thumbnail" />
+                        }
+                        <div class="box-element product">
+                            <h4><strong>@i.SlotName</strong></h4>
+                            <b>License Type : @i.LicenseType</b> <br />
+                            <b>Available slots : @i.Slots</b> <br />
+                            <b>Slot Datetime : @i.Datetime</b>
+                            <hr>
+
+                            <button class="btn btn-info text-white" type="submit" asp-controller="Home" asp-action="Apply" asp-route-id="@i.Id">Add to Cart</button>
+
+                            <h4 style="display: inline-block; float: right"><strong class="text-success">$ @i.Price</strong></h4>
+
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <h4 class="text-center text-black-50">No Promotions available right now</h4>
+        }
+    </div>
+
+</form>
+
+
+
+

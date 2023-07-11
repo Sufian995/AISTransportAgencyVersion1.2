@@ -92,7 +92,7 @@ namespace AIS_Transport_Agency.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create([Bind("Id,Datetime,Slots,Price,LicenseType,ImageURL")] SlotBooking slotBooking)
+        public async Task<IActionResult> Create([Bind("Id,Datetime,SlotName,OnPromotion,Slots,Price,LicenseType,ImageURL")] SlotBooking slotBooking)
         {
             if (ModelState.IsValid)
             {
@@ -126,7 +126,7 @@ namespace AIS_Transport_Agency.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Datetime,Slots,Price,LicenseType,ImageURL")] SlotBooking slotBooking)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Datetime,SlotName,OnPromotion,Slots,Price,LicenseType,ImageURL")] SlotBooking slotBooking)
         {
             if (id != slotBooking.Id)
             {

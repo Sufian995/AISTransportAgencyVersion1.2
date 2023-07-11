@@ -8,5 +8,7 @@ namespace AIS_Transport_Agency.Models
         public string? UserId { get; set; }
         public SlotBooking? Booking { get; set; }
         public int? BookingId { get; set; }
+
+        public int IsConfirmed { get; set; }
     }
 }

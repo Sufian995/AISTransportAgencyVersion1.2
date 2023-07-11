@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AIS_Transport_Agency.Models.BookingUser>
+﻿@model IEnumerable<AIS_Transport_Agency.Models.BookingHistory>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,7 +7,7 @@
 
 <h1>My Bookings</h1>
 
-<table class="table">
+<table class="table" id="mytable">
     <thead>
         <tr>
             <th>
@@ -66,3 +66,8 @@
         }
     </tbody>
 </table>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_DataTable");
+    }
+}

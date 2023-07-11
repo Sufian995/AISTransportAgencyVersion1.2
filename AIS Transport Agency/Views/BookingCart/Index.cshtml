@@ -1,0 +1,77 @@
+﻿@model IEnumerable<AIS_Transport_Agency.Models.BookingUser>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>My Cart</h1>
+
+<table class="table" id="mytable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking.Datetime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking.Slots)
+            </th>.
+            <th>
+                @Html.DisplayNameFor(model => model.Booking.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking.LicenseType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Booking.SlotsLeft)
+            </th>
+            @if (User.IsInRole("Admin"))
+            {
+                <th>
+                    @Html.DisplayNameFor(model => model.User.Email)
+                </th>
+            }
+            <th></th><th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Where(x=>x.IsConfirmed == 0))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Booking.Datetime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Booking.Slots)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Booking.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Booking.LicenseType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Booking.SlotsLeft)
+                </td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.User.Email)
+                    </td>
+                }
+                <td>
+                    @Html.ActionLink("Confirm", "PaymentOption", "BookingCart", new { userId = item.UserId, bookingId = item.BookingId})
+                </td>
+
+                <td>
+                    @Html.ActionLink("Cancel", "DeleteCart", "BookingCart", new { userId = item.UserId, bookingId = item.BookingId})
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_DataTable");
+    }
+}

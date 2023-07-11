@@ -9,73 +9,109 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AIS_Transport_Agency
 build_property.RootNamespace = AIS_Transport_Agency
-build_property.ProjectDir = C:\Users\admin\source\repos\AIS Transport Agency\AIS Transport Agency\
+build_property.ProjectDir = C:\Users\admin\Desktop\wetransfer_ais-sql_2023-04-19_1347\AISTransportAgency\AISTransportAgency\AIS Transport Agency\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\admin\source\repos\AIS Transport Agency\AIS Transport Agency
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\admin\Desktop\wetransfer_ais-sql_2023-04-19_1347\AISTransportAgency\AISTransportAgency\AIS Transport Agency
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Home/AboutUs.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/BookingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0NhcnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Home/Index.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/BookingCart/PaymentOption.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0NhcnRcUGF5bWVudE9wdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/BookingUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1VzZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Home/Privacy.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Shared/Error.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Home/Promotions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9tb3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Promotions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvbW90aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Shared/_DataTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYXRhVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/SlotBookings/Create.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/SlotBookings/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xvdEJvb2tpbmdzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/SlotBookings/Delete.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/SlotBookings/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xvdEJvb2tpbmdzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/SlotBookings/Details.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/SlotBookings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xvdEJvb2tpbmdzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/SlotBookings/Edit.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/SlotBookings/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xvdEJvb2tpbmdzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/SlotBookings/Index.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/SlotBookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2xvdEJvb2tpbmdzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/UserBooking/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckJvb2tpbmdcSW5kZXguY3NodG1s
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/_ViewImports.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/User/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/_ViewStart.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/admin/source/repos/AIS Transport Agency/AIS Transport Agency/Views/Shared/_Layout.cshtml]
+[C:/Users/admin/Desktop/wetransfer_ais-sql_2023-04-19_1347/AISTransportAgency/AISTransportAgency/AIS Transport Agency/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mhqdkaswr4

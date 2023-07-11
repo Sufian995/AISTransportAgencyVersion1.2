@@ -26,5 +26,6 @@ namespace AIS_Transport_Agency.Data
         }
         public DbSet<SlotBooking> SlotBooking { get; set; } = default!;
         public DbSet<BookingUser> BookingUser { get; set; } = default!; 
+        public DbSet<BookingHistory> BookingHistory  { get; set; } = default!; 
     }
 }

@@ -20,7 +20,7 @@ else
     </p>
 }
 
-<table class="table">
+<table class="table" id="mytable">
     <thead>
         <tr>
             <th>
@@ -71,3 +71,10 @@ else
 }
     </tbody>
 </table>
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_DataTable");
+    }
+}

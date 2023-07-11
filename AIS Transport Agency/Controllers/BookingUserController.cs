@@ -20,23 +20,23 @@ namespace AIS_Transport_Agency.Controllers
         {
             if (User.IsInRole("Admin"))
             {
-                var userBookings = _context.BookingUser.Include(x => x.User).Include(x => x.Booking).ToList();
+                var userBookings = _context.BookingHistory.Include(x => x.User).Include(x => x.Booking).ToList();
                 return View(userBookings);
             }
             else
             {
-                var userBookings = _context.BookingUser.Where(x => x.UserId == _userManager.GetUserId(User)).Include(x => x.User).Include(x => x.Booking).ToList();
+                var userBookings = _context.BookingHistory.Where(x => x.UserId == _userManager.GetUserId(User)).Include(x => x.User).Include(x => x.Booking).ToList();
                 return View(userBookings);
-            }            
+            }
         }
 
         public async Task<IActionResult> Delete(string? userId, int? bookingId)
         {
-            var userBooking = _context.BookingUser.FirstOrDefault(x => x.UserId == userId && x.BookingId == bookingId);
+            var userBooking = _context.BookingHistory.FirstOrDefault(x => x.UserId == userId && x.BookingId == bookingId);
 
-            _context.BookingUser.Remove(userBooking);
-            await _context.SaveChangesAsync();        
+            _context.BookingHistory.Remove(userBooking);
+            await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
-            }
+    }
 }

@@ -87,12 +87,41 @@ namespace AIS_Transport_Agency.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("AIS_Transport_Agency.Models.BookingHistory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("BookingId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IsConfirmed")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookingId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BookingHistory");
+                });
+
             modelBuilder.Entity("AIS_Transport_Agency.Models.BookingUser", b =>
                 {
                     b.Property<string>("UserId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int?>("BookingId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IsConfirmed")
                         .HasColumnType("int");
 
                     b.HasKey("UserId", "BookingId");
@@ -120,8 +149,15 @@ namespace AIS_Transport_Agency.Migrations
                     b.Property<int>("LicenseType")
                         .HasColumnType("int");
 
+                    b.Property<int>("OnPromotion")
+                        .HasColumnType("int");
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<string>("SlotName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Slots")
                         .HasColumnType("int");
@@ -266,6 +302,21 @@ namespace AIS_Transport_Agency.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("AIS_Transport_Agency.Models.BookingHistory", b =>
+                {
+                    b.HasOne("AIS_Transport_Agency.Models.SlotBooking", "Booking")
+                        .WithMany()
+                        .HasForeignKey("BookingId");
+
+                    b.HasOne("AIS_Transport_Agency.Models.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Booking");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("AIS_Transport_Agency.Models.BookingUser", b =>
